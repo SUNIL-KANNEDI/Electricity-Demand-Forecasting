@@ -44,11 +44,14 @@ To accurately forecast electricity demand using historical consumption and weath
 
 ## 📊 3. Evaluation Metrics
 
-| Model             | MAE   | RMSE  | MAPE  |
-|-------------------|-------|-------|-------|
-| Linear Regression | 13.25 | 28.38 | 0.82% |
-| SVR               | 23.25 | 52.86 | 1.37% |
-| XGBoost           | 11.83 | 24.04 | 0.74% |
+
+| Model                                      | MAE   | RMSE  | MAPE  | Test R² |
+| ------------------------------------------ | ----- | ----- | ----- | ------- |
+| **Linear Regression (Ridge-tuned)**        | 13.25 | 28.38 | 0.82% | 0.9923  |
+| **Support Vector Regression (RBF kernel)** | 23.25 | 52.86 | 1.37% | 0.9734  |
+| **XGBoost Regressor**                      | 11.83 | 24.04 | 0.74% | 0.9945  |
+|--------------------------------------------|-------|-------|-------|---------|
+
 
 ✅ **XGBoost** performed best in all metrics.
 
@@ -75,5 +78,3 @@ To accurately forecast electricity demand using historical consumption and weath
 - Enhanced planning for peak vs off-peak hours
 
 ---
-
-## 📂 Repository Structure
